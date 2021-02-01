@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { ReportSet } from './components/ReportSet';
+import './styles/app.css';
+
+const reports = [
+  {
+    'date': '08/07',
+    'points': 5
+  },
+  {
+    'date': '08/08',
+    'points': 6
+  },
+  {
+    'date': '08/09',
+    'points': 7
+  }
+];
 
 function App() {
+
+  function httpGet(theUrl)
+  {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+      xmlHttp.send( null );
+      return xmlHttp.responseText;
+  }
+
+  console.log(httpGet("http://127.0.0.1:5000/api/John"));
+  console.log('test');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReportSet tutee="John" reports={reports} />
     </div>
   );
 }

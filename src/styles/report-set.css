@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+header {
+    margin-top: 30px;
+    width: 100%;
+}
+
+button {
+    border:none;
+}
+
+.accordion-set {
+    background-color: transparent;
+}
+
+.total-points-paragraph {
+    text-align: center;
+    font-size: 3em
+}
