@@ -3,7 +3,7 @@
     box-sizing: border-box;
     width: 50%;
     height: 3em;
-    background-color: black;
+    background-color: #89B0AE;
     border-radius: 1.5em;
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +20,7 @@
     bottom: .5em;
     min-width: 2rem;
     max-width: calc(100% - 1em);
-    background-color: skyblue;
+    background-color: #D1B423;
     border-radius: 1em;
     padding: 1em;
 }
