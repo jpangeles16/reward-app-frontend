@@ -1,4 +1,5 @@
 import { ReportSet } from './components/ReportSet';
+import {Hamburger} from './components/Hamburger';
 import './styles/app.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   console.log(report)
   return (
     <div className="App">
+      <Hamburger />
       <ReportSet tutee={report.name} points={60} />
     </div>
   );
