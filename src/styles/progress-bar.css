@@ -10,6 +10,11 @@
     position: relative;
 }
 
+.progress-div {
+    position: relative;
+    top: -45px;
+}
+
 .progress-done {
     background: linear-gradient(#DD7596, #FF570A);
     box-shadow: 0 3px 3px -5px #DD7596, #FF570A;
@@ -19,4 +24,5 @@
     display: flex;
     opacity: 0;
     justify-content: center;
+    color: transparent;
 }

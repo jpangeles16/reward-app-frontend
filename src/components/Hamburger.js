@@ -12,6 +12,17 @@ export class Hamburger extends React.Component {
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
+    // make opaque the levels that the student does not yet have
+    makeOpaque(highestLevel) {
+        var children = document.getElementById('myDropdown').getElementsByTagName('a');
+
+        for (var i = 0, len = children.length; i < len; i++) {
+            if (i >= highestLevel) {
+                children[i].style.opacity = 0.15;
+            }
+        }
+    }
+
     render() {
         return (
             <div className="dropdown">
