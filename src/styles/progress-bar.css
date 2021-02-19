@@ -1,4 +1,4 @@
-.progress-bar {
+/* .progress-bar {
     position: relative;
     box-sizing: border-box;
     width: 50%;
@@ -23,4 +23,26 @@
     background-color: #D1B423;
     border-radius: 1em;
     padding: 1em;
+} */
+
+
+.progress {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
+
+.progress-done {
+    background: linear-gradient(#8B2635, #EE964B);
+    box-shadow: 0 3px 3px -5px #8B2635, #EE964B;
+    height: 100%;
+    width: 100px;
+    border-radius: 20px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
 }
