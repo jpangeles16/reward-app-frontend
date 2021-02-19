@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Accordion } from './Accordion';
 import { ProgressBar} from './ProgressBar';
 import '../styles/report-set.css';
+import monkey from '../images/monkeyman.jpg';
 
 const RANKS = [
   'an apprentice',
@@ -16,17 +16,6 @@ const RANKS = [
 ]
 
 export function ReportSet(props) {
-
-  // const totalPoints = props.reports.map((report) =>
-  //  report.points).reduce((accum, score) =>
-  //   accum + score);
-
-  // const accordions = props.reports.map((report, index) => 
-  //   <Accordion key={index}
-  //     title={`Report on ${report.date}`}
-  //     studentScore={report.points} 
-  //     content={"Test"} />
-  // );
 
   function determineRank(points) {
     if (points <= 10)
@@ -52,15 +41,20 @@ export function ReportSet(props) {
         <header>
           <h1>Hello, {props.tutee}!</h1>
         </header>
-        {/* <div className="accordion-set">
-          {accordions}
-        </div> */}
-        <div className="report-data">
-          <p className="total-points-paragraph">Your total points are {props.points}!
+        <div className="report-data grid-container">
+          <div className="one">
+            <img src={monkey}/>
+          </div>
+          <div className="two">
+            <p className="total-points-paragraph">{props.points}</p>
+          </div>
+          <div className="three">
+            <p className="advice-paragraph">Keep up the good work, {props.tutee}!</p>
+          </div>
+          <div className="four">
+            <ProgressBar totalPoints={props.points} />
+          </div>
             <br />          
-           You are currently {determineRank(props.points)}!</p>
-          <ProgressBar totalPoints={props.points} />
-          <p className="total-points-paragraph">Keep up the good work, {props.tutee}!</p>
         </div>
       </section>
     );

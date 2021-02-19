@@ -12,14 +12,34 @@ button {
     border:none;
 }
 
+section {
+    height: 100%;
+}
+
 .report-data {
-    background-color: #FF570A;
+    color: #FF570A;
+    background-color: white;
     border-radius: 3px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     padding: 2%;
 }
+
+img {
+    width: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 2fr;
+}
+
 
 .accordion-set {
     background-color: transparent;
@@ -27,5 +47,10 @@ button {
 
 .total-points-paragraph {
     text-align: center;
-    font-size: 3em
+    font-size: 10em;
+}
+
+.advice-paragraph {
+    text-align: center;
+    font-size: 3em;
 }

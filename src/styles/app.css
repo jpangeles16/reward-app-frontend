@@ -1,7 +1,9 @@
 body {
     margin: 0px;
-    background-color: white;
-    color: #342A21;
+    background-color: #2E86AB;
+    color: #35FF69;
+    font-family: sans-serif;
+
 }
 
 .accordion-set {
@@ -10,5 +12,4 @@ body {
     width: 90%;
     background-color: transparent;
     /* box-shadow: 0 15px 10px #777; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

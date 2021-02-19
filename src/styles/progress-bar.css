@@ -34,11 +34,13 @@
     margin-right: auto;
     margin-left: auto;
     color: black;
+    top: 30%;
+    position: relative;
 }
 
 .progress-done {
-    background: linear-gradient(#8B2635, #EE964B);
-    box-shadow: 0 3px 3px -5px #8B2635, #EE964B;
+    background: linear-gradient(#DD7596, #FF570A);
+    box-shadow: 0 3px 3px -5px #DD7596, #FF570A;
     height: 100%;
     width: 100px;
     border-radius: 20px;
