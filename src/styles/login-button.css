@@ -1,0 +1,15 @@
+.login-button {
+    margin: auto;
+    width: 80%;
+    height: 25%;
+    display: block;
+    position: relative;
+    top: 25px;
+    font-size: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.login-button:hover {
+    cursor: pointer;
+}

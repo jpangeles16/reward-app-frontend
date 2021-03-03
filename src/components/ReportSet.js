@@ -7,7 +7,6 @@ import monkey from '../images/monkeyman.jpg';
 
 export function ReportSet(props) {
 
-
   return (
       <section>
         <header>
@@ -17,7 +16,7 @@ export function ReportSet(props) {
           <div className="one">
             <img src={monkey}/>
           </div>
-          <div className="two">
+          <div className="total-points-div">
             <p className="total-points-paragraph">{props.points}</p>
           </div>
           <div className="three">

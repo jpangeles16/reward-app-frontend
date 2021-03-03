@@ -21,19 +21,20 @@ button {
     margin-right: auto;
     margin-bottom: 30px;
     padding: 2%;
+    min-width: 465px;
 }
 
 img {
-    width: 450px;
+    width: 28em;
     display:block;
-    margin-left: 25%;
-    margin-right: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 1fr 0.1fr;
 }
 
 
@@ -44,14 +45,44 @@ img {
 .total-points-paragraph {
     text-align: center;
     font-size: 10em;
+    background-color: blueviolet;
+    border-radius: 50%;
 }
+
 
 .advice-paragraph {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .level {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .progress-div {
+        position: relative;
+        top: 0px;
+    }
+  }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1076px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .progress-div {
+        position: relative;
+        top: 0px;
+    }
 }
