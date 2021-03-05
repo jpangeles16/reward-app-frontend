@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/hamburger.css';
 
+/* Credits to Merryle for this */
 export class Hamburger extends React.Component {
 
     constructor(props) {
