@@ -5,9 +5,12 @@
     display: block;
     position: relative;
     top: 25px;
-    font-size: 2em;
+    font-size: 3em;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: purple;
+    color: white;
+
 }
 
 .login-button:hover {

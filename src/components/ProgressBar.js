@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/progress-bar.css';
 
 function determineLevel(points) {
-    if (points < 14)
+    if (points <= 14)
       return 0;
     else if (points >= 15 && points <= 29)
       return 1;
@@ -26,7 +26,6 @@ export function ProgressBar({totalPoints}) {
             width: `${totalPoints}%`
         }
         setStyle(newStyle);
-
     }, 1000);
 
     return (
@@ -37,7 +36,7 @@ export function ProgressBar({totalPoints}) {
                     {totalPoints}
                 </div>
             </div>
-            <p className="level">{`${totalPoints} / ${100 - totalPoints}`}</p>
+            {totalPoints > 100 ? <p className="level">You broke the scale!</p> : <p className="level">{`${totalPoints} / ${100 - totalPoints}`}</p>}  
         </div>
 
     )

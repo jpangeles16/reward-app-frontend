@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "directory-tree": "^2.2.7",
     "google-spreadsheet": "^3.1.15",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

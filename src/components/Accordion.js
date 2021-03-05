@@ -1,6 +1,5 @@
 import React, {useState, useRef} from "react";
 import {Chevron} from './Chevron';
-import {StudentStatistic} from './student-statistic';
 import '../styles/accordion.css';
 
 export function Accordion(props) {

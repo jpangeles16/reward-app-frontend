@@ -6,6 +6,8 @@
     margin-top: 10px;
     margin-left: 10px;
     position: relative;
+    color: white;
+    font-size: 2em;
 }
 
 .logout-button:hover {

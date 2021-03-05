@@ -26,7 +26,7 @@ export class Hamburger extends React.Component {
     render() {
         return (
             <div className="dropdown">
-                <button onClick={this.handleClick} className="dropbtn">Badges <i className="fa fa-caret-down"></i></button>
+                <button onClick={this.handleClick} className="dropbtn">Levels<i className="fa fa-caret-down"></i></button>
                 <div id="myDropdown" className="dropdown-content">
                     <a>Level 1 - 15 points</a>
                     <a>Level 2 - 30 points</a>
