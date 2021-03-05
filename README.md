@@ -2,15 +2,17 @@
 
 # Getting Started with this Specific App
 
-Speaking as a mac user here, so terminal/GitBash can be used interchangeably.
+Speaking as a Mac user here, so terminal/GitBash can be used interchangeably.
+
 You need to have two terminals open.
+
 On one terminal, make sure you are in the root directory of this project.
 Then, you can run: `yarn start`.
 
 On the second terminal, make sure you are in the root directory of [the backend](https://github.com/merrylewang/impact-rewards).
 Then, you can run: `python server.py`.
 
-# Getting Started with Create React App
+# Getting Started with Create React App [No need to read here for this project specifically]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
